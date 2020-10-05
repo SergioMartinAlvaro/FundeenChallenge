@@ -1,1 +1,288 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* COLOR PALETTE */
+$main-color50: #70F5A5;
+$main-color100: #2FDA90;
+
+$secondary-blue-color100: #225EBF;
+$secondary-blue-color75: #2E7EFF;
+$secondary-blue-color50: #649CF7;
+$secondary-blue-color25: #8CAAD9;
+
+$secondary-red-color100: #BF2A22;
+$secondary-red-color75: #FF5A51;
+$secondary-red-color50: #F7756E;
+$secondary-red-color25: #E8837D;
+
+$secondary-yellow-color100: #D09125;
+$secondary-yellow-color75: #FFBF52;
+$secondary-yellow-color50: #F8C977;
+$secondary-yellow-color25: #E8C17D;
+
+$secondary-green-color100: #188B18;
+$secondary-green-color75: #00BF40;
+$secondary-green-color50: #4BD262;
+$secondary-green-color25: #6CE580;
+
+$background-100: #222736;
+$backgound-50: #F6F9FA;
+$background-10: #F6F8F8;
+
+$energy-eolic: #7EA7BF;
+$energy-hidraulic: #0ACDD9;
+$energy-solar: #FEA100;
+$energy-biomass: #DD6F59;
+
+$black: #111111;
+$white: #FFFFFF;
+
+$neutral80: #414141;
+$neutral60: #707070;
+
+$neutral40: #A0A0A0;
+$neutral20: #CFCFCF;
+$neutral10: #E7E7E7;
+$neutral05: #F3F3F3;
+
+/* FONT SIZE PALETTE */
+
+$h1-size: 36px;
+$h2-size: 32px;
+$h3-size: 26px;
+$label-size: 22px;
+$p-size: 20px;
+$p-small-size: 16px;
+$p-extrasmall-size: 12px;
+
+.pFontSize {
+    font-size: $p-size;
+}
+
+.psFontSize {
+    font-size: $p-small-size;
+}
+
+.peFontSize {
+    font-size: $p-extrasmall-size;
+}
+
+
+/* SPACING PALETTE */
+
+$extrasmall-spacing: 8px;
+$small-spacing: 16px;
+$light-spacing: 24px;
+$regular-spacing: 32px;
+$medium-spacing: 40px;
+$big-spacing: 48px;
+$extrabig-spacing: 56px;
+$maxi-spacing: 64px;
+$extramaxi-spacing: 72px;
+
+/* BODY */
+
+body {
+    font-family: inter-regular;
+    min-height: 100%;
+    width: 100%;
+}
+
+.floatRight {
+    float: right;
+}
+
+.em-spacing {
+    margin-top: $extrasmall-spacing;
+}
+
+.s-spacing {
+    margin-top: $small-spacing
+}
+
+.l-spacing {
+    margin-top: $light-spacing;
+}
+
+.r-spacing {
+    margin-top: $regular-spacing;
+}
+
+.m-spacing {
+    margin-top: $medium-spacing;
+}
+
+/* BUTTONS DEFINITION */
+
+.mainButton {
+    background-color: $main-color50;
+    color: $white;
+}
+
+.secondaryButton {
+    background-color: $secondary-green-color75;
+    border: none;
+}
+
+.secondaryButton:hover {
+    background-color: $secondary-green-color100;
+    border: none;
+}
+
+.secondaryButton:active {
+    background-color: $secondary-green-color100;
+    border: none;
+}
+
+.secondaryButton:focus {
+    background-color: $secondary-green-color100;
+    border: none;
+}
+
+.closedButton {
+    border: none;
+    background-color: $secondary-red-color75!important;
+}
+
+.separator {
+    height: 2px;
+    background-color: $neutral10;
+}
+
+/* FONT EXPORT */
+
+.centered {
+    text-align: center;
+}
+
+.interThin {
+    font-family: inter-light;
+}
+
+.interRegular {
+    font-family: inter-regular;
+}
+
+.interMedium {
+    font-family: inter-medium;
+}
+
+.inter-bold {
+    font-family: inter-bold;
+}
+
+.museoSemiBold {
+    font-family: museo-semibold;
+}
+
+.museoRegular {
+    font-family: museo-regular;
+}
+
+.museoMedium {
+    font-family: museo-medium;
+}
+
+.sFontSpacing {
+    letter-spacing: 2px;
+}
+
+@font-face {
+    font-family: inter-light;
+    src: url(assets/fonts/inter-light.ttf);
+}
+
+@font-face {
+    font-family: inter-regular;
+    src: url(assets/fonts/inter-regular.ttf);
+}
+
+@font-face {
+    font-family: inter-medium;
+    src: url(assets/fonts/inter-medium.ttf);
+}
+
+@font-face {
+    font-family: inter-bold;
+    src: url(assets/fonts/inter-bold.ttf);
+}
+
+@font-face {
+    font-family: museo-semibold;
+    src: url(assets/fonts/MuseoSemiBold.ttf);
+}
+
+@font-face {
+    font-family: museo-medium;
+    src: url(assets/fonts/MuseoMedium.ttf);
+}
+
+@font-face {
+    font-family: museo-regular;
+    src: url(assets/fonts/MuseoRegular.ttf);
+}
+
+
+/* IMAGES */
+
+.mainImg {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.hiddenImg {
+    opacity: 0;
+}
+
+/* ANIMATIONS */
+
+@keyframes cover {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+
+@keyframes showOpacity{
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1!important;
+    }
+}
+
+/* DEFAULTS */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: $secondary-green-color75;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}

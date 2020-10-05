@@ -1,0 +1,68 @@
+@import "../../../styles.scss";
+
+.coverImg {
+    height: 333px;
+    width: 500px;
+    background-color: $neutral40;
+    top: 0;
+    z-index: 1000;
+    position: absolute;
+    float: left;
+    animation-name: cover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.coverText {
+    height: 50px;
+    width: 50px;
+    background-color: $neutral40;
+    top: 0;
+    z-index: 1000;
+    position: absolute;
+    float: left;
+    animation-name: cover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.coverParagraph {
+    height: 220px;
+    width: 50px;
+    background-color: $neutral40;
+    top: 0;
+    z-index: 1000;
+    position: absolute;
+    float: left;
+    animation-name: cover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.coverButton {
+    height: 33px;
+    width: 50px;
+    background-color: $neutral40;
+    top: 0;
+    z-index: 1000;
+    position: absolute;
+    float: left;
+    animation-name: cover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.relative {
+    position: relative;
+    z-index: -1;
+}
+
+.showImg {
+    animation-name: showOpacity;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.cropped {
+display: none;
+}

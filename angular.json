@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fundeenChallenge"
+    }
+  },
+  "defaultProject": "fundeenChallenge",
+  "cli": {
+    "analytics": "9cb7bdcc-b981-4dac-8e44-451fb1a3375c"
+  }
 }

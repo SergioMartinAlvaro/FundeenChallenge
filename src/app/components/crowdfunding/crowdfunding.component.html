@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row">
+        <div class="rightBlock">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 s-spacing" id="progress-label">
+                    <p>VENTA DE PARTICIPACIONES</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centered">
+                    <p class="crowdfunding-label l-spacing">FALTAN</p>
+                    <p class="mediumText interMedium">0€</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centered">
+                    <p class="crowdfunding-label l-spacing">{{nInversores}} INVERSORES</p>
+                    <p class="greenText smallText">FINANCIADO EN {{diasFinanciacion}} DÍA</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="progress-bar">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 110%"
+                            aria-valuenow="progresoInversion" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-money">
+                            <p>{{progresoInversion - 10}}%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 separator m-spacing"></div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 centered s-spacing">
+                    <p class="peFontSize inter-bold">{{dineroContribuido}} €</p>
+                    <p class="crowdfunding-label">Contribuido</p>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 centered s-spacing">
+                    <p class="peFontSize inter-bold">{{dineroObjetivo}} €</p>
+                    <p class="crowdfunding-label">Objetivo</p>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 centered s-spacing">
+                    <p class="peFontSize inter-bold">{{potencia}} MW</p>
+                    <p class="crowdfunding-label">Potencia</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 separator l-spacing"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centered l-spacing">
+                    <p class="crowdfunding-label">RENTABILIDAD ANUAL</p>
+                    <p class="inter-bold">{{rentabilidadAnual}}%</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centered l-spacing">
+                    <p class="crowdfunding-label">PLAZO</p>
+                    <p class="inter-bold"><span>{{plazo}}</span> AÑOS</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 separator m-spacing"></div>
+                <div
+                    class="col-lg-6 offset-lg-6 col-md-6 offset-md-6 col-sm-4 offset-sm-4 col-xs-8 offset-xs-8 centered l-spacing">
+                    <p class="crowdfunding-label">SI INVIERTO</p>
+                </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                        <div class="form-group">
+                            <input type="number" _ngConten-c11 class="form-control numberInput" pattern="\d*,?\d*?"
+                                placeholder="€" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centered l-spacing">
+                        <p class="crowdfunding-label">VOY A RECIBIR</p>
+                        <p class="inter-bold greenText">0 €</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centered l-spacing">
+                        <p class="crowdfunding-label">VOY A EVITAR</p>
+                        <p class="inter-bold greenText"><span>0 KG CO<sub>2</sub></span></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <button class="closedButton btn btn-primary btn-lg btn-block"><span class="interRegular peFontSize sFontSpacing">PROYECTO CERRADO</span></button>
+                    </div>
+                
+            </div>
+
+        </div>
+    </div>
+</div>

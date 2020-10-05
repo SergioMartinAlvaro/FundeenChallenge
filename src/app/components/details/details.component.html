@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="museoRegular r-spacing">DETALLES</h1>
+            <div class="coverText r-spacing"></div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img src="../../../assets/img/solar-bg.jpg" alt="solar-bg" title="Placas Solares Malaga" id="img-bg"
+                class="img-fluid r-spacing mainImg hiddenImg" />
+            <div class="coverImg r-spacing img-fluid"></div>
+        </div>
+        <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 r-spacing">
+            <div class="crop" id="crop-text">
+                <p>
+                    ¡Arrancamos! Bienvenido a Fundeen, la primera Plataforma de Financiación Participativa española
+                    autorizada por la CNMV que te permite invertir en proyectos de energía renovable.
+                </p>
+                <p>
+                    Calanova Solar es el primer proyecto de Fundeen. Se trata de una instalación fotovoltaica que va
+                    a cubrir el 25% de la demanda energética de un excelente campo de golf en la provincia de
+                    Málaga. La instalación permitirá al club Calanova Golf una reducción de su factura eléctrica
+                    mediante un autoconsumo financiado con fórmula ESCO.
+                </p>
+                <div class="coverParagraph"></div>
+                <span *ngIf="isCropped">
+                    <p>
+                        La fórmula ESCO (Energy Service COmpany) es una alternativa muy extendida para financiar
+                        proyectos de ahorro energético. Los inversores llevan a cabo la inversión para ejecutar una
+                        actuación que deriva en un ahorro energético para el consumidor, y a partir de ese momento son
+                        ellos quienes obtienen gran parte del ahorro económico derivado de esa optimización energética.
+                        El consumidor, por su parte, se queda con la parte minoritaria del ahorro en inicio y recibe,
+                        cuando los inversores han obtenido la rentabilidad deseada, la instalación de forma gratuita
+                        para explotarla hasta el final de su vida útil. De esta forma el consumidor no lleva a cabo
+                        ninguna inversión y obtiene ahorros desde el minuto 1.
+                    </p>
+                    <p>
+                        Características de la inversión:
+                    </p>
+                    <ol type="a">
+                        <li>Se reciben ingresos trimestralmente</li>
+                        <li>Rentabilidad anual estimada del 7,47% TAE</li>
+                        <li>Es una inversión segura</li>
+                        <ul>
+                            <li>- El consumidor es un prestigioso campo de golf en Mijas (Málaga), llamado Calanova
+                                Golf. Es un campo de 18 hoyos construido en 2014.</li>
+                            <li>La instalación se construye para abastecer una nueva zona comercial que se está
+                                construyendo en el campo de golf como parte de su estrategia
+                                   de crecimiento.</li>
+                            <li>Sólo se suministrará el 25% de la energía que el consumidor necesita, por lo que siempre
+                                se consumirá toda la producción de la instalación, y
+                                   por eso la compra del 100% de la energía producida está asegurada por contrato.</li>
+                            <li>El precio de compra de energía que el consumidor consigue en el mercado es mayor que el
+                                ofrecido contractualmente por la sociedad dueña
+                                   de la instalación fotovoltaica, lo que garantiza la prioridad de la sociedad
+                                promotora.</li>
+                        </ul>
+                        <li> d) Podrás vender tu participación en el futuro Marketplace, que se desarrollará en 2019, en
+                            caso de que quieras desinvertir antes de tiempo.</li>
+                    </ol>
+                    <p>
+                        Se trata de un proyecto de autoconsumo de 30 kWp que abastecerá la nueva zona comercial que se
+                        va a construir en el campo de golf. Como ya hemos dicho, el campo de golf está en Mijas, una
+                        zona alta radiación solar que se traduce en una elevada producción de la instalación.
+                    </p>
+                    <p>
+                        La instalación cuenta con equipos de primerísima calidad, un aspecto de vital importancia en el
+                        desarrollo de proyectos fotovoltaicos para aumentar la vida útil de la instalación y reducir los
+                        costes de mantenimiento:
+                    </p>
+                    <ol type="a">
+                        <li>Módulos fotovoltaicos: Módulo CANADIAN SOLAR CS6U-330P de 330 Wp (90 unidades)</li>
+                        <li>Inversores fotovoltaicos: Inversor SMA Sunny Tripower 25000 TL de 25 kW</li>
+                        <li>Estructura de soporte: Estructura metálica fija con inclinación a 12º</li>
+                    </ol>
+                    <p>El proyecto se realiza bajo el modelo EPC (Engineering, Procurement & Construction), por lo que el precio de la instalación está cerrado. BETTERGY será la empresa encargada de la ejecución de la instalación, siendo además quien la mantendrá en el futuro. La garantía sobre la instalación aportada por parte de la empresa instaladora es de tres años.</p>
+                </span>
+                <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 col-xs-12 l-spacing">
+                    <button type="button" id="showmore-btn" (click)="crop()" class="btn btn-secondary btn-block btn-lg interRegular peFontSize sFontSpacing secondaryButton hiddenImg">SABER {{buttonText}}</button> 
+                    <div class="coverButton"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
