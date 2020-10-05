@@ -1,0 +1,15 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "ubicacion": "Calanova Solar",
+        "inversores": 38,
+        "dineroContribuido": 42650,
+        "dineroObjetivo": 42650,
+        "potencia": 0.03,
+        "rentabilidad": 7.47,
+        "plazo": 15,
+        "closed": true
+      }
+    ]
+  }

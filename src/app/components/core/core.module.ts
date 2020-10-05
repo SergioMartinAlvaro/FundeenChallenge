@@ -9,7 +9,8 @@ import { StaffteamComponent } from '../staffteam/staffteam.component';
 import { DocumentationComponent } from '../documentation/documentation.component';
 import { ContactComponent } from '../contact/contact.component';
 import { RouterModule } from '@angular/router';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ProjectsService } from 'src/app/services/projects.service';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   exports: [
     CrowdfundingComponent,
@@ -36,6 +38,9 @@ import { RouterModule } from '@angular/router';
     StaffteamComponent,
     DocumentationComponent,
     ContactComponent
+  ],
+  providers: [
+    ProjectsService
   ]
 })
 export class CoreModule { }

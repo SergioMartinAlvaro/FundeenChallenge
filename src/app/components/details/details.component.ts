@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectsService } from 'src/app/services/projects.service';
 
 @Component({
   selector: 'app-details',
@@ -7,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _projectsService: ProjectsService) { }
 
   buttonText = "MÁS";
   isCropped:boolean = false;
-
+  projects;
   ngOnInit(): void {
     setTimeout(function() {
       document.getElementById("img-bg").classList.remove("hiddenImg");
@@ -19,6 +20,14 @@ export class DetailsComponent implements OnInit {
       document.getElementById("showmore-btn").classList.remove("hiddenImg");
       document.getElementById("showmore-btn").classList.add("showImg");
     }, 1000)
+    this.getProjects();
+  }
+
+  getProjects() {
+    this._projectsService.getProjects().subscribe(data => {
+      this.projects = data;
+      console.log(data);
+    })
   }
 
    reset_animation() {
